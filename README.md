@@ -19,24 +19,29 @@ This repository contains the Snakemake workflow for the machine learning pipelin
 
 ## Installation
 
-1. Make sure you have [conda](https://docs.conda.io/en/latest/miniconda.html) installed. 
-
-2. Install Mamba to facilitate snakemake installation, as recommended in the [Snakemake docs](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html#installation-via-conda-mamba).
-
+First download the recipe build file with git-clone
+Then build the singulrity image
 ```
-$ conda install -n base -c conda-forge mamba
-```
-
-3. Clone this repo, then create and activate the provided [environment](./environment.yml):
-
-```
-$ git clone https://github.com/beliveau-lab/PaintSHOP_pipeline.git \
-    && cd PaintSHOP_pipeline/ \
-    && mamba env create -f environment.yml \
-    && conda activate paintshop_snakemake
+git clone https://github.com/Artifice120/PaintSHOP_pipeline-singularity/
+singularity build Spray-can.sif ContainerFile
 ```
 
 ## Running the pipeline
+
+Before running the pipeline enter the container with
+
+```
+singularity shell Spray-can.sif
+```
+
+--or--
+
+For a shell script you can run a commmand in the shell with exec
+
+```
+singularity exec Spray-can.sif some-command
+```
+
 
 A complete example is included to test the pipeline installation. To run the pipeline on the included sample files: 
 
