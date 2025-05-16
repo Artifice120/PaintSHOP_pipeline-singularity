@@ -2,10 +2,9 @@
     <a href="#readme"><img src="./docs/img/PaintSHOP-logo.png" width="200"></a>
 </div>
 
-# PaintSHOP Pipeline
+# PaintSHOP Pipeline Singularity container
 
-[![Snakemake](./docs/img/snakemake.svg)](https://snakemake.readthedocs.io)
-[![DOI](./docs/img/preprint.svg)](https://doi.org/10.1101/2020.07.05.188797)
+
 
 ## Overview
 
