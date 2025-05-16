@@ -32,5 +32,4 @@ PROJECT_DIR=/snakey
 
 git clone https://github.com/beliveau-lab/PaintSHOP_pipeline.git \
     && cd PaintSHOP_pipeline/ \
-    && mamba env create -f environment.yml \
-    && conda activate paintshop_snakemake
+    && mamba env create -f environment.yml
