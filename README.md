@@ -91,7 +91,7 @@ cd /proj/parkerlab/users/jotorr/PaintSHOP_pipeline/example_run
 snakemake --configfile config.yml --snakefile $SNAKE_FILE \
     --use-conda --conda-prefix $CONDA_ENVS --cores \
     --restart-times 3 --conda-frontend conda
-"example_run/2run_pipeline.sh" 56L, 1537B                                                                                                 33,0-1        18%
+"example_run/2run_pipeline.sh" 56L, 1537B                                                                                                
 ```
 
 Whichever way make sure you activate the shell script that is not inside the container ( the one you can see without activating the container )
@@ -100,7 +100,8 @@ Whichever way make sure you activate the shell script that is not inside the con
 A complete example is included to test the pipeline installation. To run the pipeline on the included sample files: 
 
 ```
-$ cd example_run/ && ./run_pipeline.sh
+singularity shell Spray-can.sif
+cd example_run/ && ./run_pipeline.sh
 ```
 
 When this example is run, pipeline output will be generated [here](./example_run/pipeline_output/). Expected outputs are provided [here](./example_run/expected_pipeline_output) for comparison. 
