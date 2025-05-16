@@ -47,6 +47,8 @@ make sure you change the -B option to wherever your git repo is saved
 
 shell run script that worked for me
 
+Apptainer was confused on which .bashrc to run so I just put the .bashrc contents in the shell script itself
+
 ```
 SNAKE_FILE='../workflow/Snakefile'
 CONDA_ENVS='../shared_conda_envs2'
