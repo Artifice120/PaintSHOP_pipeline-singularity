@@ -23,6 +23,7 @@ First download the recipe build file with git-clone
 Then build the singulrity image
 ```
 git clone https://github.com/Artifice120/PaintSHOP_pipeline-singularity/
+cd PaintSHOP_pipeline-singularity/
 singularity build Spray-can.sif ContainerFile
 ```
 
