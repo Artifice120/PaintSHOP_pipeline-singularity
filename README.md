@@ -39,8 +39,10 @@ singularity shell Spray-can.sif
 For a shell script you can run a commmand in the shell with exec
 
 ```
-singularity exec Spray-can.sif some-command
+singularity exec Spray-can.sif bash path/to/the/run-file
 ```
+
+Whichever way make sure you activate the shell script that is not inside the container ( the one you can see without activating the container )
 
 
 A complete example is included to test the pipeline installation. To run the pipeline on the included sample files: 
